@@ -1,6 +1,6 @@
 # Vite-Plugin-Svg-Mix
 
-Vite SVG Sprite 插件
+Vite SVG Sprite 插件，不限制语言，React/Vue都可使用
 
 通过 `svgo` 进行优化，`svg-parser`调整结构，`svg-sprite` 进行生成
 
