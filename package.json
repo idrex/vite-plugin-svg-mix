@@ -1,0 +1,70 @@
+{
+  "name": "vite-plugin-svg-mix",
+  "version": "0.3.1",
+  "license": "MIT",
+  "author": "Drex",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "keywords": [
+    "vite",
+    "vite-plugin",
+    "svg",
+    "sprite",
+    "svgo"
+  ],
+  "files": [
+    "/dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "engines": {
+    "node": "^14.18.0 || >=16.0.0"
+  },
+  "homepage": "https://github.com/idrex/vite-plugin-svg-mix",
+  "scripts": {
+    "dev": "unbuild --stub",
+    "build": "unbuild",
+    "start": "vite --debug",
+    "test": "vitest run",
+    "lint:check": "prettier --check .",
+    "lint:fix": "eslint ./src --ext .jsx,.js,.ts,.tsx --quiet --fix --ignore-path ./.eslintignore",
+    "lint:format": "prettier  --loglevel warn --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\" ",
+    "lint": "npm run lint:format && npm run lint:fix ",
+    "publish": "tsc"
+  },
+  "dependencies": {
+    "svg-parser": "^2.0.4",
+    "svg-sprite": "^2.0.0",
+    "svgo": "^2.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.3",
+    "@types/svgo": "^2.6.4",
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
+    "eslint": "^8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.10",
+    "eslint-plugin-simple-import-sort": "^8.0.0",
+    "pre-commit": "^1.2.2",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.4",
+    "unbuild": "^0.9.4",
+    "vite": "^3.1.8",
+    "vitest": "^0.24.3"
+  },
+  "peerDependencies": {
+    "vite": "^3.0.0"
+  },
+  "pre-commit": "lint"
+}

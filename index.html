@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vite-plugin-svg-mix</title>
+    <style>
+      #root {
+        color: #f00;
+      }
+      .icon {
+        display: inline-block;
+        width: 4em;
+        height: 4em;
+        stroke-width: 0;
+        stroke: currentColor;
+        fill: currentColor;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <span>
+        <svg class="icon" viewBox="0 0 32 32"><use xlink:href="#icon-close"></use></svg>
+      </span>
+      <span>
+        <svg class="icon" viewBox="0 0 32 32"><use xlink:href="#icon-copy"></use></svg>
+      </span>
+      <span>
+        <svg class="icon" viewBox="0 0 32 32"><use xlink:href="#icon-code"></use></svg>
+      </span>
+      <span>
+        <svg class="icon" viewBox="0 0 32 32"><use xlink:href="#icon-delete"></use></svg>
+      </span>
+    </div>
+  </body>
+</html>

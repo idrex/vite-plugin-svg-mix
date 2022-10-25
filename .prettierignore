@@ -1,0 +1,10 @@
+# Ignore artifacts:
+build
+public
+static
+dist
+
+*.html
+*.yaml
+*.md
+*.d.ts
